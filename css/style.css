@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background: white;
+  box-shadow: #000;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 14px 7px -18px #111;
+}
+.main_header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  align-items: center;
+}
+h1 {
+  color: white;
+}
+.main_logo img {
+  /* margin-right: 200px; */
+  height: 40px;
+}
+.account_login {
+  display: flex;
+  color: black;
+  align-items: center;
+}
+.account_login a {
+  text-decoration: none;
+}
+.user_login {
+  display: flex;
+  padding-left: 10px;
+}
+.user_login p {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 0px;
+  align-items: center;
+}
+.cart_section {
+  display: flex;
+  color: black;
+  gap: 15px;
+}
+/* -------------------- header css end --------------------  */
+/* mobile menu */
+.mobile_menu {
+  color: #979797;
+  cursor: pointer;
+  font-size: 1em;
+}
+/* -------------------- Navbar css start --------------------  */
+.navbar {
+  background: #141414;
+}
+.nav_link {
+  padding: 8px;
+}
+.nav_link .nav_item {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-bottom: 0;
+}
+.navbar_item a {
+  color: black !important;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  height: 53px;
+  white-space: nowrap;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  text-decoration: none;
+}
+.navbar_item a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  /* transform: scaleX(0); */
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  top: 35px;
+  transform-origin: bottom right;
+  /* transition: transform 0.55s ease-; */
+}
+.navbar_item a:hover::after {
+  color: red;
+  border-width: 10cm;
+  border-bottom: 3px solid rgb(221, 159, 79);
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* -==============================================******************** */
+
+/* .nav_item li:hover .drop-menu, */
+.nav_item li:hover .mega-box {
+  transition: transform all 1s;
+  top: 53px;
+  opacity: 1;
+  visibility: visible;
+}
+.drop-menu li a {
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+
+.mega-box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 50px 300px 50px 300px;
+  margin-top: 17px;
+  opacity: 0;
+  z-index: 1;
+  visibility: hidden;
+  background-color: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  /* height: 350px; */
+  box-shadow: #000;
+}
+.mega-box a {
+  text-decoration: none;
+}
+.nav_link ul li {
+  color: #000 !important;
+  text-decoration: none;
+  list-style: none;
+}
+.mega-box .content {
+  /* padding: 10px 0px; */
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/* .mega-box .content.content_sub {
+    padding: 14px 20px;
+    justify-content: space-between;
+  } */
+
+.mega-box .content .row {
+  /* width: calc(50% - 401px); */
+  line-height: 29px;
+  width: 24%;
+  flex-direction: column;
+}
+.content .content_sub ul li a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/*====================== Hero Sction Css Start ======================*/
+.hero_section {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  padding-top: 70px;
+}
+.hero_section_left {
+  background: #e7e8e8;
+  width: 100%;
+}
+.hero_content {
+  padding: 6.25rem;
+}
+.hero_content p {
+  margin-bottom: 5px;
+}
+.hero_content h1 {
+  color: #937031;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.25rem;
+  letter-spacing: 2px;
+  line-height: 1.14;
+  margin-bottom: 0.875rem;
+}
+.hero_content p.dec {
+  font-size: 1.125rem;
+  line-height: 1.67;
+  margin-bottom: 2.5rem;
+}
+.hero_content .btn {
+  background-color: #937031;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: 1px;
+  padding: 0.9375rem 5.5625rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero_content .btn:hover {
+  background-color: #b9975b;
+  color: white;
+}
+/*====================== Hero Sction Css End ======================*/
+/*====================== Product Section Css Start ======================*/
+.product_section {
+  padding: 50px 0px 0px 0px;
+}
+.left_box {
+  cursor: pointer;
+}
+.right_box {
+  cursor: pointer;
+}
+.left_box_content {
+  padding-top: 25px;
+}
+.left_box_content h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.left_box_content h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 0.8rem;
+}
+.btn_view {
+  background-color: #937031;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: 1px;
+  padding: 0.9375rem 5.5625rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+}
+.btn_view:hover {
+  background-color: #b9975b;
+  color: white;
+}
+
+.subscribers_content h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.condition {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding-top: 10px;
+}
+.never_run {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.never_run i {
+  color: #b9975b;
+}
+.never_run p {
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+/* ====================Subscribers-Section css start================= */
+.subscribers_content {
+  padding-bottom: 40px;
+}
+.subscribers_content p {
+  text-align: center;
+}
+.subscribers_section {
+  padding-bottom: 60px;
+}
+/* silder */
+
+/* slider */
+.subscribers_box {
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.subscribers_box:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 7px;
+}
+/* ====================Subscribers-Section css end================= */
+/*==================== Quiz-Section Css Start ====================*/
+.quiz_section {
+  padding-top: 60px;
+  background-color: #e7e8e8;
+}
+.quiz_section img {
+  width: 80%;
+}
+.quiz_content {
+  padding-left: 30px;
+}
+.quiz_content .btn {
+  background-color: #937031;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: 1px;
+  padding: 0.9375rem 1.5625rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.quiz_content .btn:hover {
+  background-color: #b9975b;
+  color: white;
+}
+.quiz_content h1 {
+  color: #878787;
+  font-size: 35px;
+}
+.quiz_content p {
+  color: #222222;
+  font-weight: 600;
+}
+.quiz_content span {
+  color: #937031;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.quiz_content span i {
+  font-size: 23px;
+}
+/*==================== Quiz-Section Css end====================*/
+
+/* ===================== Secound Slider css Start ===================== */
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  /* padding-top: 20% !important; */
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border: none !important;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card_btn {
+  background-color: #937031;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: 1px;
+  padding: 0.9375rem 3.5625rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  z-index: 1;
+}
+.card_btn:hover{
+    display: block;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.image-content .dec {
+  padding-top: 5px;
+  font-weight: 600;
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.swiper-navBtn {
+  color: #6e93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #4070f4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 12px !important;
+  color: #979797 !important;
+  font-weight: 700;
+  border: 1px solid #979797;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 8px;
+}
+.swiper-button-next {
+  right: 0px !important;
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 50%;
+  background: white;
+}
+.swiper-button-prev {
+  left: 0px !important;
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 50%;
+  background: white;
+}
+.swiper-pagination {
+  display: none;
+}
+.swiper-pagination-bullet {
+  background-color: #6e93f7;
+  opacity: 1;
+  display: none;
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+  display: none;
+}
+
+/* ===================== Secound Slider css End ===================== */
