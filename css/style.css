@@ -129,6 +129,8 @@ h1 {
   overflow-y: auto;
   /* height: 350px; */
   box-shadow: #000;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
 }
 .mega-box a {
   text-decoration: none;
@@ -388,6 +390,10 @@ h1 {
   align-items: center;
   padding: 10px 14px;
 }
+.card:hover .card_btn {
+  display: inline-block;
+  transition: padding .4s ease-in-out;
+}
 .card_btn {
   background-color: #937031;
   border: 1px solid transparent;
@@ -403,17 +409,18 @@ h1 {
   padding: 0.9375rem 3.5625rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   margin-bottom: 15px;
   z-index: 1;
+  display: none;
 }
-.card_btn:hover{
-    display: block;
+.card_btn:hover {
+  display: block;
 }
 .image-content {
   position: relative;
   row-gap: 5px;
-  padding: 25px 0;
+  /* padding: 25px 0; */
 }
 .image-content .dec {
   padding-top: 5px;
@@ -427,13 +434,21 @@ h1 {
   background: #fff;
   padding: 3px;
 }
-.card-image .card-img {
+.card-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
-
+.card-image img:last-child {
+  display: none;
+}
+.card-image:hover img:first-child {
+  display: none;
+}
+.card-image:hover img:last-child {
+  display: inline-block;
+}
 .swiper-navBtn {
   color: #6e93f7;
   transition: color 0.3s ease;
