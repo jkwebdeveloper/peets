@@ -343,7 +343,23 @@
         </div>
     </div>
     <div class="hero_section container-fluid">
-        <img src="./assets/images/signature-blend.avif" alt="">
+      <div class="slide-container swiper">
+        <div class="slide-image">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <img src="./assets/images/single-origin.avif" alt="">
+            </div>
+            <div class="card swiper-slide">
+              <img src="./assets/images/signature-blend.avif" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- class name change after use slider -->
+        <!-- <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div> -->
+        <!-- // class name change after use slider -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div> 
         <div class="hero_section_left">
             <div class="hero_content">
                 <h4>30% OFF FOR NEW SUBSCRIBERS</h4>
@@ -519,6 +535,36 @@
           },
           950: {
             slidesPerView: 4,
+          },
+        },
+      });
+      var swiper = new Swiper(".slide-image", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        centerSlide: "true",
+        // effect: "fade",
+        fade: "true",
+        grabCursor: "true",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 1,
+          },
+          950: {
+            slidesPerView: 1,
           },
         },
       });
